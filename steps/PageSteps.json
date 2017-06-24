@@ -1,0 +1,10 @@
+{
+    "example search": {
+        "url": "https://www.reddit.com/",
+        "actions": [
+            "wait|500",
+            "input|#search [placeholder=\"search\"]|I love Esperanto",
+            "wait|1500",
+            "click|#search [type=\"submit\"]"
+    ]}
+}

@@ -1,0 +1,47 @@
+[data-bopis-menu],
+[data-bopis-menu] div,
+[data-bopis-menu] button {
+  box-sizing: border-box;
+  padding: 8px 10px;
+}
+[data-bopis-menu] button {
+    border: 1px solid white;
+    background-color: transparent;
+    cursor: pointer;
+    -webkit-transition: all 0.4s; /* Safari */
+    transition: all 0.3s;
+    color: white
+}
+[data-bopis-menu] button:hover {
+    background-color: white;
+    color: rgba(0, 77, 230, 0.8);
+    font-style: normal;
+}
+[data-bopis-menu] {
+    border: 1px solid rgba(0, 51, 102,0.4);
+    max-width:100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 5000;
+    text-align: left;
+    background-color: rgba(0, 77, 230, 0.8);
+    color: white;
+    padding: 0;
+}
+.bopis-step div {
+  display:inline-block;
+}
+.bopis-step {
+  margin: 10px;
+}
+.bopis-walk {
+  margin: 10px auto;
+  display: block;
+  border: 1px solid red;
+  width: 100%;
+}
+
+.bopisHide {
+    display: none;
+}

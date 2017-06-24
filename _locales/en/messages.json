@@ -1,0 +1,29 @@
+{
+    "extName": {
+        "message": "Developer Page Walk Through"
+    },
+    "extDescription": {
+        "message": "Simple navigator for fast-forwarding through pages."
+    },
+    "homepageUrl": {
+        "message": "https://github.com/njensen0604/Developer-Page-Walk-Through"
+    },
+    "browserActionH1": {
+        "message": "Developer Page Walk Through"
+    },
+    "browserActionDesc": {
+        "message": "This extension fast-forwarding through pages for testing a certain spot in an app."
+    },
+    "browserActionDevs": {
+        "message": "Program by Nicholas Jensen"
+    },
+    "browserActionButtonActive": {
+        "message": "Hide Menu"
+    },
+    "browserActionButtonInActive": {
+        "message": "Show Menu"
+    },
+    "browserActionExtraNote": {
+        "message": "The dev must supply the code for navigation in the json file."
+    }
+}

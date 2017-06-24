@@ -1,0 +1,43 @@
+{
+  "name": "__MSG_extName__",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "description": "__MSG_extDescription__",
+  "homepage_url": "https://github.com/njensen0604/",
+  "icons": {
+    "16": "icons/iconText16.png",
+    "48": "icons/iconText48.png",
+    "128": "icons/iconText128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "background/background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": "icons/iconText128.png",
+    "default_title": "BOPIS: Navigate Checkout",
+    "default_popup": "browser_action/browser_action.html"
+  },
+  "permissions": [
+    "http://*/*, https://*/*",
+    "storage"
+  ],
+  "author": "Nicholas Jensen",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "run_at": "document_end",
+      "js": [
+        "content_scripts/js/controllers/BopisRunSteps.js","content_scripts/js/model/BopisJsonFile.js", "content_scripts/js/model/BopisJsonData.js", "content_scripts/js/controllers/BopisMenuController.js", "content_scripts/js/controllers/BopisMainController.js", 
+        "content_scripts/js/service/BopisMessageWatch.js"
+      ],
+      "css": ["content_scripts/css/BopisStyle.css"]
+    }
+  ],
+  "web_accessible_resources": [ "steps/PageSteps.json" ]
+}
