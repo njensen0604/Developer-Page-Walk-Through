@@ -21,7 +21,9 @@ Get it from my github [Developer Page Walk Through](https://github.com/njensen06
 ## Setup Page Steps
 
 In the extension, open steps/PageSteps.json.
+
 Use the format:
+```
 `{`
 `    "search for coder": {`
 `        "url": "https://www.google.com",`
@@ -32,6 +34,7 @@ Use the format:
 `            "click|[role\"search\"] [type=\"submit\"]"`
 `    ]}`
 `}`
+```
 
 **Must Have**
 
