@@ -1,6 +1,8 @@
 {
     "example search": {
-        "url": "https://www.reddit.com/",
+        "url": [
+            "https://www.reddit.com/"
+        ],
         "actions": [
             "wait|500",
             "input|#search [placeholder=\"search\"]|I love Esperanto",
