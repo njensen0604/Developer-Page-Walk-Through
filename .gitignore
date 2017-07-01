@@ -9,4 +9,6 @@ tsconfig.json
 
 .eslintrc.json
 
+.DS_Store
+
 # End of https://www.gitignore.io/api/visualstudiocode

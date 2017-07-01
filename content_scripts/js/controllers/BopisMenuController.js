@@ -52,9 +52,14 @@ var BopisMenu = (function () {
             }
             else {
                 var _loop_1 = function () {
-                    if (bopisJsonData.getData()[key].url != window.location.href) {
-                        return "continue";
+                    var foundUrlMatch = false;
+                    for (var keyUrl in bopisJsonData.getData()[key].url) {
+                        if (bopisJsonData.getData()[key].url[keyUrl] == window.location.href) {
+                            foundUrlMatch = true;
+                        }
                     }
+                    if (foundUrlMatch === false)
+                        return "continue";
                     var parent_2 = document.createElement("DIV");
                     parent_2.classList.add("bopis-step");
                     var message = document.createElement("DIV");

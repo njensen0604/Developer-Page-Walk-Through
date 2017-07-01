@@ -22,16 +22,20 @@ Get it from my github [Developer Page Walk Through](https://github.com/njensen06
 
 In the extension, open steps/PageSteps.json.
 Use the format:
-`{`
-`    "search for coder": {`
-`        "url": "https://www.google.com",`
-`        "actions": [`
-`            "wait|500",`
-`            "input|#inner-editor|njensen0604 on github",`
-`            "wait|1500",`
-`            "click|[role\"search\"] [type=\"submit\"]"`
-`    ]}`
-`}`
+```
+{
+    "search for coder": {
+        "url": [
+            "https://www.google.com"
+        ]
+        "actions": [
+            "wait|500",
+            "input|#inner-editor|njensen0604 on github",
+            "wait|1500",
+            "click|[role\"search\"] [type=\"submit\"]"
+    ]}
+}
+```
 
 **Must Have**
 

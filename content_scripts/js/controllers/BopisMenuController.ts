@@ -55,9 +55,13 @@ class BopisMenu {
                 this.getBopisMenuElement().appendChild(parent);
             } else {
                 for (var key in bopisJsonData.getData()) {
-                    if (bopisJsonData.getData()[key].url != window.location.href) {
-                        continue;
+                    let foundUrlMatch = false;
+                    for (var keyUrl in bopisJsonData.getData()[key].url) {
+                        if (bopisJsonData.getData()[key].url[keyUrl] == window.location.href) {
+                            foundUrlMatch = true;
+                        }
                     }
+                    if (foundUrlMatch === false) continue;
                     let parent = document.createElement("DIV");
                     parent.classList.add("bopis-step");
                     let message = document.createElement("DIV");
